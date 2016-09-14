@@ -17,7 +17,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:text="Fina"
                     android:id="@+id/radioButton2"
-                    android:checked="false" />
+                    android:checked="true" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -60,26 +61,39 @@
             android:id="@+id/textView3"
             android:layout_gravity="center_horizontal" />
 
-        <Spinner
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner" />
+            android:layout_height="wrap_content">
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner2" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredientes_spn_1"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.33" />
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner3" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredientes_spn_2"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.33" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredientes_spn_3"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.33" />
+        </LinearLayout>
 
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
 
             <TextView
@@ -95,7 +109,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/editText" />
+                android:id="@+id/editText"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <TextView

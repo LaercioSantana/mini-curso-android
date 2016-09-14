@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Pizzer</string>
+
+    <string-array name="lista_ingredientes">
+        <item>Queijo</item>
+        <item>Calabresa</item>
+        <item>Carne de sol</item>
+        <item>Bacon</item>
+        <item>Chocolate</item>
+        <item>Presunto</item>
+        <item>Ovo</item>
+        <item>Tomate</item>
+        <item>Cebola</item>
+    </string-array>
 </resources>
