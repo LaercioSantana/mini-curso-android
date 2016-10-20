@@ -33,20 +33,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:id="@+id/tipo_massa">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fina"
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/fina_rb"
                     android:checked="true" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Grossa"
-                    android:id="@+id/radioButton"
+                    android:id="@+id/grossa_rb"
                     android:checked="false"
                     android:layout_marginLeft="5dp" />
             </RadioGroup>
@@ -109,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/editText"
+                android:id="@+id/quant_fatias_et"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -118,7 +119,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Preço: 00.00"
-            android:id="@+id/textView5"
+            android:id="@+id/preco_tv"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal" />
 
@@ -129,7 +130,7 @@
         android:layout_height="wrap_content"
         android:text="Pedir"
         style="@style/Botao"
-        android:id="@+id/button2"
+        android:id="@+id/pedir_btn"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="false"
         android:layout_alignParentRight="false"
