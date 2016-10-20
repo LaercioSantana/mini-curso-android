@@ -1,5 +1,6 @@
 package com.santana.myapplication;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Pedido extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, TextWatcher, AdapterView.OnItemSelectedListener {
     Spinner ingredientes1, ingredientes2, ingredientes3;
@@ -48,6 +50,13 @@ public class Pedido extends AppCompatActivity implements RadioGroup.OnCheckedCha
         ingredientes3.setOnItemSelectedListener(this);
 
         preco = (TextView) findViewById(R.id.preco_tv);
+
+        pedir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText( v.getContext(), "Pedido realizado com sucesso!", Toast.LENGTH_LONG ).show();
+            }
+        });
     }
     private void atualizarPreco(){
         double preco = 0;
